@@ -1,0 +1,27 @@
+scratchpad
+
+1. Create a new Materials folder.
+
+    In the Project window, navigate to the highest level Assets folder.
+    Inside the Assets folder, right-click > Create > Folder to make a new folder.
+    Rename the new folder "Materials".
+
+2. Create a new Background material.
+
+    In the newly created Materials folder, right-click > Create > Material to make a new material, then name it "Background".
+    In the Inspector window, use the foldout (triangle) to expand the Surface Inputs module, and select the Base Map color picker.
+    Change the color to a pale gray with RGB values of 130, 130, and 130.
+    Make sure the Metallic Map is set to 0 and the Smoothness is set to around 0.25 for a matte finish.
+    Apply the Background material to the Ground GameObject by dragging it from the Project window onto the Ground GameObject in the Scene view.
+
+3. Creating a new Player Material.
+
+    In the Materials folder, create a new material and name it "Player".
+    In the Inspector window, adjust the Base Map color for the Player material — set the RGB values to 0, 220, and 255 for a light blue.
+    Set the Metallic Map to 0 and change the Smoothness to 0.75 for a shiny finish.
+    Apply the Player material to the Player GameObject by dragging it onto the sphere in the Scene view.
+
+4. Change the Directional Light’s rotation.
+
+    In the Hierarchy window, select the Directional Light.
+    In the Transform component, change the Rotation values to X=50, Y=50, and Z=0 for a more dramatic silhouette.
