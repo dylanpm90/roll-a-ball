@@ -1,27 +1,32 @@
-scratchpad
+1. Create a PickUp GameObject.
 
-1. Create a new Materials folder.
+    In the Hierarchy window, right-click > 3D Object > Cube, 
+then rename it “PickUp”.
+    Reset the PickUp GameObject’s Transform component.
+    Press the F key to frame in on the PickUp GameObject 
+in the Scene view.
+    Use the Move tool to drag the PickUp GameObject 
+out of the way so it’s not overlapping with the 
+Player GameObject.
 
-    In the Project window, navigate to the highest level Assets folder.
-    Inside the Assets folder, right-click > Create > Folder to make a new folder.
-    Rename the new folder "Materials".
+2. Set the PickUp Gameobject’s Transform values.
 
-2. Create a new Background material.
+    Set the PickUp Gameobject’s Position Y value to 0.5 to 
+raise it above the Ground GameObject.
+    Set each of the Rotation axis values to 45 to tilt it on an 
+angle.
+    Set each of the Scale axis values to 0.5 to make it smaller.
 
-    In the newly created Materials folder, right-click > Create > Material to make a new material, then name it "Background".
-    In the Inspector window, use the foldout (triangle) to expand the Surface Inputs module, and select the Base Map color picker.
-    Change the color to a pale gray with RGB values of 130, 130, and 130.
-    Make sure the Metallic Map is set to 0 and the Smoothness is set to around 0.25 for a matte finish.
-    Apply the Background material to the Ground GameObject by dragging it from the Project window onto the Ground GameObject in the Scene view.
+3. Create a PickUp material.
 
-3. Creating a new Player Material.
-
-    In the Materials folder, create a new material and name it "Player".
-    In the Inspector window, adjust the Base Map color for the Player material — set the RGB values to 0, 220, and 255 for a light blue.
-    Set the Metallic Map to 0 and change the Smoothness to 0.75 for a shiny finish.
-    Apply the Player material to the Player GameObject by dragging it onto the sphere in the Scene view.
-
-4. Change the Directional Light’s rotation.
-
-    In the Hierarchy window, select the Directional Light.
-    In the Transform component, change the Rotation values to X=50, Y=50, and Z=0 for a more dramatic silhouette.
+    In the Project window, find and select the 
+Background material.
+    In the main menu, go to Edit > Duplicate. Alternatively, 
+you can press Ctrl+D (macOS: Cmd+D).
+    Rename the new material “PickUp”.
+    With the Pickup material still selected in the 
+Project window, use the Base Map property swatch or 
+dropper to change its color property.
+    Set the RGB values 255, 200, and 0 for a bright yellow.
+    Drag the PickUp material from the Project window 
+onto the PickUp GameObject in the Scene view. 
